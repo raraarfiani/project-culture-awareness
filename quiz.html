@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity in Diversity - Culture Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Unity In Diversity<span>.</span></a>
+        <a href="map.html" class="back-link">← EXPLORE</a>
+    </nav>
+    <main class="quiz-container">
+        <div class="section-title">
+            <p class="small-title">TEST YOUR KNOWLEDGE</p>
+            <h1>Culture Quiz</h1>
+            <p>Let's see how much you know about Indonesian culture.</p>
+        </div>
+        <section class="quiz-box" id="quizBox">
+            <div class="quiz-progress">
+                <span id="questionNumber">QUESTION 1 / 10</span>
+                <span>YOUR CULTURE JOURNEY</span>
+            </div>
+            <div class="progress-bar"><div id="progressFill"></div></div>
+            <h2 id="questionText">Question will appear here</h2>
+            <div class="answer-list" id="answerList"></div>
+            <p id="feedback" aria-live="polite"></p>
+            <button class="start-button" id="nextButton" type="button" onclick="nextQuestion()" disabled>NEXT QUESTION →</button>
+        </section>
+        <section class="result-box" id="resultBox" hidden>
+            <h1>Your Result</h1>
+            <div class="final-score" id="finalScore">0 / 10</div>
+            <p id="resultMessage"></p>
+            <button class="start-button" type="button" onclick="restartQuiz()">TRY AGAIN</button>
+            <a href="map.html" class="secondary-button">BACK TO EXPLORE</a>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
